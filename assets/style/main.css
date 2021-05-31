@@ -1,48 +1,81 @@
-body, html {
-    background-color: white;
+body,
+html {
+  background-color: white;
+}
+
+#dw-s1 {
+  background: #009797;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #99d5d5, #4cb6b6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #99d5d5, #4cb6b6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.flex-grow {
+  flex: 1 0 auto;
+}
+
+.bmd-layout-canvas {
+  flex-grow: 1;
+}
+
+#heading {
+  font-size: 25px;
+  margin: auto;
+  display: block;
+}
+
+#official_logo {
+  margin: auto;
+  display: block;
+  width: 60%;
+}
+
+#call_btn,
+#facebook_btn {
+  width: 80%;
+}
+
+#call_btn:hover,
+#facebook_btn:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  background-color: none;
+}
+
+.material-icons {
+  vertical-align: middle;
+  line-height: 0 !important;
+  position: relative;
+  top: -1px;
+}
+
+#namaaz_section,
+#imam_section {
+  background-color: white;
+}
+
+#namaaz_timetable {
+  margin-top: 10%;
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  #official_logo {
+    width: 90%;
   }
-  #dw-s1{
-          background: #009797	;  /* fallback for old browsers */
-          background: -webkit-linear-gradient(to right, #99d5d5	, #4cb6b6	);  /* Chrome 10-25, Safari 5.1-6 */
-          background: linear-gradient(to right, #99d5d5, #4cb6b6	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  #call_btn,
+  #facebook_btn {
+    width: 70%;
+    margin-bottom: 2rem;
   }
-  .flex-grow {
-      flex: 1 0 auto;
+
+  #call_btn:hover,
+  #facebook_btn:hover{
+    transform: translateY(-0.1em);
   }
-  
-  .bmd-layout-canvas {
-    flex-grow: 1;
-  }
-  #heading{
-    font-size: 25px;
-    margin: auto;
-    display: block;
-  }
-  #official_logo{
-    margin: auto;
-    display: block;
-    width: 60%;
-  }
-  #call_btn, #facebook_btn{
-    width: 80%;
-  }
-  #call_btn:hover , #facebook_btn:hover{
-    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-    transform: translateY(-0.25em);
-    background-color: none;
-  }
-  .material-icons {
-    vertical-align: middle;
-    line-height: 0 !important;
-    position: relative;
-    top: -1px;
-  }
-  #namaaz_section, #imam_section{
-    background-color: white;
-  }
-  #namaaz_timetable{
-    margin-top: 10%;
-    border-style: solid;
-    border-color: black ;
-    text-align: center;
-  }
+}
