@@ -9,17 +9,15 @@
     border-radius: 10px;
     font-size: 20px;
     outline: none;
-    background-color: #3498DB;
+    background-color: #4fb9b7;
     color: #fff;
     cursor: pointer;
     padding: 10px 15px;
     box-shadow: 5px 5px 10px gray;
-    scroll-behavior: smooth;
 }
 
 #top-btn:hover {
-    background-color: #226da0;
+    background-color: #39a09e;
     color: white;
     transition: all 0.6s ease-in;
-    scroll-behavior: smooth;
 }
